@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/april1858/subscription-aggregator/config"
-	"github.com/april1858/subscription-aggregator/internal/handler"
-	"github.com/april1858/subscription-aggregator/internal/logger"
+	"github.com/april1858/sg/config"
+	"github.com/april1858/sg/internal/handler"
+	"github.com/april1858/sg/internal/logger"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
