@@ -28,9 +28,11 @@ services:
 
   app:
     build: .
+    env_file:
+      - .env
     container_name: subscription-aggregator
     ports:
-      - "${APP_PORT:-8080}:8080"
+      - "${APP_PORT}:${APP_PORT}"
     environment:
       - DB_HOST=db
       - DB_PORT=${DB_PORT:-5432}

@@ -3,7 +3,6 @@ module github.com/april1858/sg
 go 1.26.5
 
 require (
-	github.com/april1858/subscription-aggregator v0.0.0-20261023064857-ecc306807587
 	github.com/caarlos0/env v3.5.0+incompatible
 	github.com/gin-gonic/gin v1.12.0
 	go.uber.org/zap v1.28.0

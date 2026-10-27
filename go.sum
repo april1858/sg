@@ -1,5 +1,3 @@
-github.com/april1858/subscription-aggregator v0.0.0-20261023064857-ecc306807587 h1:vmm1zsSZaguY9Yew7y/db3mUusKfYeLYwwy4BSSff/s=
-github.com/april1858/subscription-aggregator v0.0.0-20261023064857-ecc306807587/go.mod h1:PQ6kAma7nwe+67IWwIWXSUJbmciZPdpUqPlbLJqHS+E=
 github.com/bytedance/gopkg v0.1.3 h1:TPBSwH8RsouGCBcMBktLt1AymVo2TVsBVCY4b6TnZ/M=
 github.com/bytedance/gopkg v0.1.3/go.mod h1:576VvJ+eJgyCzdjS+c4+77QF3p7ubbtiKARP3TxducM=
 github.com/bytedance/sonic v1.15.0 h1:/PXeWFaR5ElNcVE84U0dOHjiMHQOwNIx3K4ymzh/uSE=

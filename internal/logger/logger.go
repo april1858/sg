@@ -1,6 +1,8 @@
 package logger
 
 import (
+	"fmt"
+
 	"go.uber.org/zap"
 )
 
@@ -21,6 +23,8 @@ func NewLogger(level string) (*zap.Logger, error) {
 	if err != nil {
 		return nil, err
 	}
-
+	if l == nil {
+		fmt.Println("yes !!!!!!!!!!!!!!")
+	}
 	return l, nil
 }

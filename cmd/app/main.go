@@ -36,6 +36,7 @@ func main() {
 	handler.RegisterSubscriptionHandlers(api, l)
 
 	addr := fmt.Sprintf(":%s", cfg.AppPort)
+
 	l.Info("listening on", zap.String("addr", addr))
 
 	if err := r.Run(addr); err != nil {
