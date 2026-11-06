@@ -1,16 +1,22 @@
 package config
 
+import "os"
+
 type Config struct {
-	AppPort    string `env:"APP_PORT" envDefault:"8080"`
-	DBHost     string `env:"DB_HOST" envDefault:"db"`
-	DBPort     string `env:"DB_PORT" envDefault:"5432"`
-	DBUser     string `env:"DB_USER" envDefault:"postgres"`
-	DBPassword string `env:"DB_PASSWORD" envDefault:"secret"`
-	DBName     string `env:"DB_NAME" envDefault:"subscriptions_db"`
-	LogLevel   string `env:"LOG_LEVEL" envDefault:"info"`
+	AppPort    string
+	DBHost     string
+	DBPort     string
+	DBUser     string
+	DBPassword string
+	DBName     string
+	LogLevel   string
 }
 
 func Load() (Config, error) {
-	conf := Config{}
+	port := os.Getenv("APP_PORT")
+	if port == "" {
+		port = "8080"
+	}
+	conf := Config{port, "db", "5432", "postres", "secret", "subscriptions_db", "info"}
 	return conf, nil
 }
