@@ -1,9 +1,5 @@
 package config
 
-import (
-	"github.com/caarlos0/env"
-)
-
 type Config struct {
 	AppPort    string `env:"APP_PORT" envDefault:"8080"`
 	DBHost     string `env:"DB_HOST" envDefault:"db"`
@@ -14,11 +10,7 @@ type Config struct {
 	LogLevel   string `env:"LOG_LEVEL" envDefault:"info"`
 }
 
-func Load() (*Config, error) {
-	c := &Config{}
-	err := env.Parse(c)
-	if err != nil {
-		return nil, err
-	}
-	return c, nil
+func Load() (Config, error) {
+	conf := Config{}
+	return conf, nil
 }

@@ -3,7 +3,6 @@ module github.com/april1858/sg
 go 1.26.5
 
 require (
-	github.com/caarlos0/env v3.5.0+incompatible
 	github.com/gin-gonic/gin v1.12.0
 	go.uber.org/zap v1.28.0
 )
